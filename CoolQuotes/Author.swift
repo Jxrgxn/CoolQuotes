@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+class Author {
+    var authorFirstName: String!
+    var authorMiddleName: String?
+    var authorLastName: String!
+}
+
+

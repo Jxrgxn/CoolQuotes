@@ -20,6 +20,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="6hh-5G-K8J" kind="show" id="WZX-kC-IfR"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -41,6 +44,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Rq-il-lGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="710" y="399"/>
+        </scene>
+        <!--Display-->
+        <scene sceneID="xpk-br-nvB">
+            <objects>
+                <viewController id="6hh-5G-K8J" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gCd-e7-odJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="cFx-Pg-GAN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N5P-yZ-0E6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Display Quote and author here " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oAb-dW-wSL">
+                                <rect key="frame" x="0.0" y="64" width="320" height="372"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Display" id="S1q-Kt-FLh">
+                        <barButtonItem key="rightBarButtonItem" title="Favorite" id="dWf-UE-BNc"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w8C-C5-Zua" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1150" y="811"/>
         </scene>
         <!--Enter Quote-->
         <scene sceneID="qkV-A5-Knk">
@@ -107,7 +139,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gre-VM-gDW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1104" y="399"/>
+            <point key="canvasLocation" x="1141" y="65"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rIm-vx-W17">

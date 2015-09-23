@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+class Quote {
+    var quote: String!
+    //Note Difference between : and = in Swift 
+}
+
+
+
+
