@@ -12,6 +12,13 @@ class Author {
     var authorFirstName: String!
     var authorMiddleName: String?
     var authorLastName: String!
+
+    var fullAuthorName: String {
+        get {
+            return authorFirstName + " " + authorLastName
+        }
+    }
 }
+
 
 

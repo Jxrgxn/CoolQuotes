@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B90096431BB301AE004D97B9 /* QuoteExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90096421BB301AE004D97B9 /* QuoteExtension.swift */; };
+		B90096451BB3031A004D97B9 /* AddQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90096441BB3031A004D97B9 /* AddQuoteViewController.swift */; };
 		B922C1341BB1F6E800E49E2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B922C1331BB1F6E800E49E2C /* AppDelegate.swift */; };
 		B922C1391BB1F6E800E49E2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B922C1371BB1F6E800E49E2C /* Main.storyboard */; };
 		B922C13B1BB1F6E800E49E2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B922C13A1BB1F6E800E49E2C /* Assets.xcassets */; };
 		B922C13E1BB1F6E800E49E2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B922C13C1BB1F6E800E49E2C /* LaunchScreen.storyboard */; };
-		B922C1461BB1F77800E49E2C /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B922C1451BB1F77800E49E2C /* QuotesViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		B922C1481BB1F82300E49E2C /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B922C1471BB1F82300E49E2C /* Quote.swift */; settings = {ASSET_TAGS = (); }; };
-		B922C14A1BB1F84100E49E2C /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = B922C1491BB1F84100E49E2C /* Author.swift */; settings = {ASSET_TAGS = (); }; };
+		B922C1461BB1F77800E49E2C /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B922C1451BB1F77800E49E2C /* QuotesViewController.swift */; };
+		B922C1481BB1F82300E49E2C /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B922C1471BB1F82300E49E2C /* Quote.swift */; };
+		B922C14A1BB1F84100E49E2C /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = B922C1491BB1F84100E49E2C /* Author.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B90096421BB301AE004D97B9 /* QuoteExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteExtension.swift; sourceTree = "<group>"; };
+		B90096441BB3031A004D97B9 /* AddQuoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddQuoteViewController.swift; sourceTree = "<group>"; };
 		B922C1301BB1F6E800E49E2C /* CoolQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B922C1331BB1F6E800E49E2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B922C1381BB1F6E800E49E2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,11 +65,13 @@
 				B922C1331BB1F6E800E49E2C /* AppDelegate.swift */,
 				B922C1371BB1F6E800E49E2C /* Main.storyboard */,
 				B922C1471BB1F82300E49E2C /* Quote.swift */,
+				B90096421BB301AE004D97B9 /* QuoteExtension.swift */,
 				B922C1491BB1F84100E49E2C /* Author.swift */,
 				B922C13A1BB1F6E800E49E2C /* Assets.xcassets */,
 				B922C13C1BB1F6E800E49E2C /* LaunchScreen.storyboard */,
 				B922C13F1BB1F6E800E49E2C /* Info.plist */,
 				B922C1451BB1F77800E49E2C /* QuotesViewController.swift */,
+				B90096441BB3031A004D97B9 /* AddQuoteViewController.swift */,
 			);
 			path = CoolQuotes;
 			sourceTree = "<group>";
@@ -96,6 +102,7 @@
 		B922C1281BB1F6E800E49E2C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = BaselNotBasilProductions;
 				TargetAttributes = {
@@ -141,8 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B922C1341BB1F6E800E49E2C /* AppDelegate.swift in Sources */,
+				B90096451BB3031A004D97B9 /* AddQuoteViewController.swift in Sources */,
 				B922C1481BB1F82300E49E2C /* Quote.swift in Sources */,
 				B922C14A1BB1F84100E49E2C /* Author.swift in Sources */,
+				B90096431BB301AE004D97B9 /* QuoteExtension.swift in Sources */,
 				B922C1461BB1F77800E49E2C /* QuotesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +300,7 @@
 				B922C1441BB1F6E800E49E2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
