@@ -34,6 +34,7 @@ class QuotesViewController: UITableViewController {
             let displayVC = segue.destinationViewController as! DisplayQuoteViewController
             //Remember that you still need to set this up as a delegate.
             displayVC.delegate = self
+            //
         }
     }
 
