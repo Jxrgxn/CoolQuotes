@@ -19,10 +19,22 @@ class QuotesViewController: UITableViewController {
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        //Tell the Add Quote view controller who its delegate is; in this case its self 
+        //Tell the Add Quote view controller who its delegate is; in this case its self
 
-        let viewController = segue.destinationViewController as! AddQuoteViewController
-        viewController.delegate = self;
+        switch segue.identifier! {
+            case "addQuoteIdentifier":
+                let viewController = segue.destinationViewController as! AddQuoteViewController
+                viewController.delegate = self
+
+            default:
+                break
+        }
+        switch segue.identifier! {
+            case "displayQuoteIdentifier":
+            let displayVC = segue.destinationViewController as! DisplayQuoteViewController
+            //Remember that you still need to set this up as a delegate.
+            displayVC.delegate = self
+        }
     }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -34,15 +46,14 @@ class QuotesViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("quoteIdentifier", forIndexPath: indexPath) as! UITableViewCell
-        let quoteArray = quotes[indexPath.row]
+        let cell = tableView.dequeueReusableCellWithIdentifier("quoteIdentifier", forIndexPath: indexPath)
+        let quote = quotes[indexPath.row]
 
-        cell.textLabel?.text = quoteArray.quote
+        cell.textLabel?.text = quote.quote
+        cell.detailTextLabel?.text = quote.authorFirstName + " " + quote.authorLastName
 
         return cell
-
     }
-
 }
 
 extension QuotesViewController: AddQuoteDelegate {
@@ -50,9 +61,11 @@ extension QuotesViewController: AddQuoteDelegate {
 
         let newQuote = Quote()
         newQuote.quote = quote
-        let newAuthor = Author()
-        newAuthor.authorFirstName = authorFirstName
-        newAuthor.authorLastName = authorLastName
+
+        newQuote.authorFirstName = authorFirstName
+        newQuote.authorLastName = authorLastName
+
+        quotes.append(newQuote)
 
         //Reload the Tableview 
         tableView.reloadData()

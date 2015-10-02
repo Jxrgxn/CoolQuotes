@@ -15,7 +15,7 @@
 		B922C13E1BB1F6E800E49E2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B922C13C1BB1F6E800E49E2C /* LaunchScreen.storyboard */; };
 		B922C1461BB1F77800E49E2C /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B922C1451BB1F77800E49E2C /* QuotesViewController.swift */; };
 		B922C1481BB1F82300E49E2C /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B922C1471BB1F82300E49E2C /* Quote.swift */; };
-		B922C14A1BB1F84100E49E2C /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = B922C1491BB1F84100E49E2C /* Author.swift */; };
+		B96F26721BBA622900DF8137 /* DisplayQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96F26711BBA622900DF8137 /* DisplayQuoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		B922C13F1BB1F6E800E49E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B922C1451BB1F77800E49E2C /* QuotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
 		B922C1471BB1F82300E49E2C /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
-		B922C1491BB1F84100E49E2C /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		B96F26711BBA622900DF8137 /* DisplayQuoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayQuoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +64,9 @@
 			children = (
 				B922C1331BB1F6E800E49E2C /* AppDelegate.swift */,
 				B922C1371BB1F6E800E49E2C /* Main.storyboard */,
+				B96F26711BBA622900DF8137 /* DisplayQuoteViewController.swift */,
 				B922C1471BB1F82300E49E2C /* Quote.swift */,
 				B90096421BB301AE004D97B9 /* QuoteExtension.swift */,
-				B922C1491BB1F84100E49E2C /* Author.swift */,
 				B922C13A1BB1F6E800E49E2C /* Assets.xcassets */,
 				B922C13C1BB1F6E800E49E2C /* LaunchScreen.storyboard */,
 				B922C13F1BB1F6E800E49E2C /* Info.plist */,
@@ -148,9 +148,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B922C1341BB1F6E800E49E2C /* AppDelegate.swift in Sources */,
+				B96F26721BBA622900DF8137 /* DisplayQuoteViewController.swift in Sources */,
 				B90096451BB3031A004D97B9 /* AddQuoteViewController.swift in Sources */,
 				B922C1481BB1F82300E49E2C /* Quote.swift in Sources */,
-				B922C14A1BB1F84100E49E2C /* Author.swift in Sources */,
 				B90096431BB301AE004D97B9 /* QuoteExtension.swift in Sources */,
 				B922C1461BB1F77800E49E2C /* QuotesViewController.swift in Sources */,
 			);

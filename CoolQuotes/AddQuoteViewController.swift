@@ -15,7 +15,7 @@ protocol AddQuoteDelegate {
 
 class AddQuoteViewController: UITableViewController {
 
-    var delegate: AddQuoteDelegate?
+    var delegate: AddQuoteDelegate!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,8 @@ class AddQuoteViewController: UITableViewController {
             print("You haven't set a delegate!!")
         } else {
             //Ask why the compiler asked for an unwrapper for the author names
-            delegate!.didSaveQuoteWithAuthor(authorFirstNameTextField.text!, authorLastName: authorLastNameTextField.text!, quote: quoteTextView.text)
+            print(authorFirstNameTextField.text)
+            delegate.didSaveQuoteWithAuthor(authorFirstNameTextField.text!, authorLastName: authorLastNameTextField.text!, quote: quoteTextView.text!)
         }
     }
 }
